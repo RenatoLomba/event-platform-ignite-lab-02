@@ -1,0 +1,15 @@
+.bm-burger-button {
+  @apply fixed right-9 top-6 block md:hidden;
+}
+
+.bm-cross-button {
+  @apply hidden;
+}
+
+.bm-menu-wrap {
+  @apply fixed top-[75px] h-full;
+}
+
+.bm-menu {
+  @apply bg-gray-900;
+}
