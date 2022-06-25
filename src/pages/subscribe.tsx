@@ -1,6 +1,7 @@
 import { FC, FormEvent, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import CodeMockupBackground from '../assets/images/code-mockup.png';
 import { Footer } from '../components/footer';
 import { Input } from '../components/input';
 import { LogoIgnite } from '../components/logo-ignite';
@@ -28,17 +29,17 @@ export const SubscribePage: FC = () => {
   return (
     <div className="flex flex-col max-h-screen overflow-auto">
       <div className="flex-1 bg-blur bg-cover bg-no-repeat flex flex-col items-center">
-        <div className="max-w-[1100px] w-full flex items-center justify-between mt-20 mx-auto">
-          <div className="max-w-[640px]">
+        <div className="max-w-[1100px] w-full flex flex-col lg:flex-row gap-6 items-center justify-between mt-10 lg:mt-20 mx-auto">
+          <div className="max-w-[640px] px-6 flex flex-col items-center lg:items-start">
             <LogoIgnite />
 
-            <h1 className="mt-8 text-[2.5rem] font-medium leading-tight">
+            <h1 className="mt-8 text-[2rem] lg:text-[2.5rem] font-medium leading-tight text-center lg:text-left">
               Construa uma{' '}
               <strong className="text-blue-500">aplicação completa</strong>, do
               zero, com <strong className="text-blue-500">React</strong>
             </h1>
 
-            <p className="mt-4 text-gray-200 leading-relaxed">
+            <p className="mt-4 text-sm text-gray-200 leading-relaxed text-center lg:text-left">
               Em apenas uma semana você vai dominar na prática uma das
               tecnologias mais utilizadas e com alta demanda para acessar as
               melhores oportunidades do mercado.
@@ -74,11 +75,7 @@ export const SubscribePage: FC = () => {
           </div>
         </div>
 
-        <img
-          src="/src/assets/images/code-mockup.png"
-          className="mt-10"
-          alt="Code mockup"
-        />
+        <img src={CodeMockupBackground} className="mt-10" alt="Code mockup" />
       </div>
 
       <div className="px-6 pb-6">
